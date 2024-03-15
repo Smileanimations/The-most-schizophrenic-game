@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1710418968
+icon.svg::CompressedTexture2D::7457495731323617302::1710412940::1710412949::1::::<><>::
+player.tscn::PackedScene::-1::1710418968::0::1::::<><>::
+::res://mages/::1710417919
+player_up.png::CompressedTexture2D::6363453291053539452::1710417916::1710417919::1::::<><>::
+player_walk.png::CompressedTexture2D::1012833516712227548::1703060503::1710417919::1::::<><>::
+so5ydvtnswz61-177754240.jpg::CompressedTexture2D::3839648167635083294::1699897079::1710413876::1::::<><>::
+::res://player/::1710418968
+Player.gd::GDScript::-1::1710418742::0::1::::<>Area2D<>::
