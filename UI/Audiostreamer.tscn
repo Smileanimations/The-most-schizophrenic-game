@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://rldjljxbxj5r"]
+
+[ext_resource type="Script" path="res://UI/Audiostreamer.gd" id="1_y4s61"]
+
+[node name="Audiostreamer" type="AudioStreamPlayer"]
+autoplay = true
+script = ExtResource("1_y4s61")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 411.0
+offset_top = 270.0
+offset_right = 597.0
+offset_bottom = 296.0
+text = "I NEED HELP AAAAAAAH"
+
+[connection signal="finished" from="." to="." method="_on_finished"]

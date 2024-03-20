@@ -1,4 +1,11 @@
-CollisionShape2D
+Label
+AudioStreamPlayer
 AnimatedSprite2D
+ProgressBar
+Timer
+TextureProgressBar
+Node
+Container
+CollisionShape2D
 AnimationPlayer
 Area2D

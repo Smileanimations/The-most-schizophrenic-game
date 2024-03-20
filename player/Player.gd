@@ -2,11 +2,14 @@ extends Area2D
 
 @export var speed = 400
 var screen_size
+@export var Health = 20
+@onready var Healthbar = $Healthbar
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
-	pass # Replace with function body.
+	Healthbar.max_value = Health
+	Healthbar.value = Health
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,16 +26,17 @@ func _process(delta):
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-		$AnimatedSprite2D.play()
+		$Playersprite.play()
 	else :
-		$AnimatedSprite2D.stop()
+		$Playersprite.stop()
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
 	
 	if velocity.x != 0:
-		$AnimatedSprite2D.animation = "walk"
-		$AnimatedSprite2D.flip_v = false
-		$AnimatedSprite2D.flip_h = velocity.x < 0
+		$Playersprite.animation = "walk"
+		$Playersprite.flip_v = false
+		$Playersprite.flip_h = velocity.x < 0
 	elif velocity.y != 0:
-		$AnimatedSprite2D.animation = "up"
-		$AnimatedSprite2D.flip_v = velocity.y > 0
+		$Playersprite.animation = "up"
+		$Playersprite.flip_v = velocity.y > 0
+
