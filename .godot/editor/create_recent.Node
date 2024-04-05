@@ -1,8 +1,9 @@
+Timer
+Button
 Label
 AudioStreamPlayer
 AnimatedSprite2D
 ProgressBar
-Timer
 TextureProgressBar
 Node
 Container

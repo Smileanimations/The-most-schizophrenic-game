@@ -1,6 +1,7 @@
-res://UI/Audiostreamer.tscn
-res://UI/Agitated.gd
 res://main.tscn
 res://player/player.tscn
 res://UI/Agitated.tscn
-res://UI/Audiostreamer.gd
+res://UI/Audiostreamer.tscn
+res://UI/Attacks/AttackUI.tscn
+res://UI/Attacks/AttackUI.gd
+res://UI/Agitated.gd

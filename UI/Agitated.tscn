@@ -33,20 +33,20 @@ grow_vertical = 2
 script = ExtResource("1_8v2ss")
 
 [node name="Enragetimer" type="Timer" parent="."]
-wait_time = 0.1
+wait_time = 0.4
 autostart = true
 
 [node name="agitatorbar" type="ProgressBar" parent="."]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 1.0
-offset_right = 40.0
-offset_bottom = 509.0
+offset_right = 34.0
+offset_bottom = 338.0
+max_value = 200.0
 fill_mode = 3
-metadata/_edit_lock_ = true
 
 [node name="Agitatedeye" type="AnimatedSprite2D" parent="."]
-position = Vector2(20, 520)
+position = Vector2(17, 350)
 scale = Vector2(1.22727, 1.26923)
 sprite_frames = SubResource("SpriteFrames_3nej8")
 animation = &"enraged"

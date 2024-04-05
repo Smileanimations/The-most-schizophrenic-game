@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bitbpxscnyrl7"]
+
+[ext_resource type="Script" path="res://UI/Attacks/AttackUI.gd" id="1_ik70k"]
+[ext_resource type="Texture2D" uid="uid://db40mb0ojfrus" path="res://Images/bubbleblight.webp" id="1_x0e56"]
+[ext_resource type="Texture2D" uid="uid://bd0yr2xh7olnl" path="res://Images/waterblight.webp" id="2_yu2aw"]
+[ext_resource type="Texture2D" uid="uid://btp6t1kf7u1al" path="res://Images/bleeding.webp" id="3_renbb"]
+
+[node name="AttackUI" type="Node2D"]
+script = ExtResource("1_ik70k")
+
+[node name="BubbleButton" type="Button" parent="."]
+offset_top = 587.0
+offset_right = 59.0
+offset_bottom = 646.0
+icon = ExtResource("1_x0e56")
+icon_alignment = 1
+expand_icon = true
+
+[node name="WaterButton" type="Button" parent="."]
+offset_left = 74.0
+offset_top = 587.0
+offset_right = 133.0
+offset_bottom = 646.0
+icon = ExtResource("2_yu2aw")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Physbutton" type="Button" parent="."]
+offset_left = 146.0
+offset_top = 588.0
+offset_right = 205.0
+offset_bottom = 647.0
+icon = ExtResource("3_renbb")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="BubbleButton" to="." method="_on_bubble_button_pressed"]
+[connection signal="pressed" from="WaterButton" to="." method="_on_water_button_pressed"]

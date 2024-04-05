@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyio55ckv3b1w"]
+[gd_scene load_steps=5 format=3 uid="uid://cyio55ckv3b1w"]
 
 [ext_resource type="PackedScene" uid="uid://54mgn34rubgi" path="res://player/player.tscn" id="1_inhgl"]
 [ext_resource type="Script" path="res://main.gd" id="1_rmd47"]
 [ext_resource type="PackedScene" uid="uid://roamkpvqyb8o" path="res://UI/Agitated.tscn" id="3_yhngu"]
+[ext_resource type="PackedScene" uid="uid://bitbpxscnyrl7" path="res://UI/Attacks/AttackUI.tscn" id="4_houi7"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_rmd47")
@@ -10,3 +11,6 @@ script = ExtResource("1_rmd47")
 [node name="Player" parent="." instance=ExtResource("1_inhgl")]
 
 [node name="Agitator" parent="." instance=ExtResource("3_yhngu")]
+metadata/_edit_lock_ = true
+
+[node name="AttackUI" parent="." instance=ExtResource("4_houi7")]

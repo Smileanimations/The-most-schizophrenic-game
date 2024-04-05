@@ -14,19 +14,32 @@ func _ready():
 func _process(delta):
 	pass
 
+var isRage = false
+var agValue = 0
 func _on_timer_timeout():
-	agitated.value += 1
-	enranged()
-	if agitated.value == 100:
-		timer.stop()
-
-
+	if not isRage:
+		agValue += 1
+	else:
+		agValue -= 4
+	agValue = clampi(agValue, 0, 200)
+	if agValue >= 200:
+		enranged()
+	elif agValue <= 0:
+		unenrage()
+	agitated.value = agValue
 func enranged():
-	if agitated.value == 100:
-		$Agitatedeye.animation = "enraged"
-		playSound("Roar")
-		playSound("Theme")
+	isRage = true
+	$Agitatedeye.animation = "enraged"
+	playSound("Roar")
 func playSound(sound):
 	var instance = audio.instantiate()
 	instance.startup(sound)
 	add_child(instance)
+
+func unenrage():
+	isRage = false
+	$Agitatedeye.animation = "default"
+	
+
+
+
