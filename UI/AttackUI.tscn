@@ -1,18 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bitbpxscnyrl7"]
+[gd_scene load_steps=5 format=3 uid="uid://cu8okmg7m0o8t"]
 
-[ext_resource type="Script" path="res://UI/Attacks/AttackUI.gd" id="1_ik70k"]
-[ext_resource type="Texture2D" uid="uid://db40mb0ojfrus" path="res://Images/bubbleblight.webp" id="1_x0e56"]
-[ext_resource type="Texture2D" uid="uid://bd0yr2xh7olnl" path="res://Images/waterblight.webp" id="2_yu2aw"]
-[ext_resource type="Texture2D" uid="uid://btp6t1kf7u1al" path="res://Images/bleeding.webp" id="3_renbb"]
+[ext_resource type="Script" path="res://UI/AttackUI.gd" id="1_tbtkc"]
+[ext_resource type="Texture2D" uid="uid://db40mb0ojfrus" path="res://Images/bubbleblight.webp" id="2_mgnio"]
+[ext_resource type="Texture2D" uid="uid://bd0yr2xh7olnl" path="res://Images/waterblight.webp" id="3_lg213"]
+[ext_resource type="Texture2D" uid="uid://btp6t1kf7u1al" path="res://Images/bleeding.webp" id="4_t12d6"]
 
 [node name="AttackUI" type="Node2D"]
-script = ExtResource("1_ik70k")
+script = ExtResource("1_tbtkc")
 
 [node name="BubbleButton" type="Button" parent="."]
 offset_top = 587.0
 offset_right = 59.0
 offset_bottom = 646.0
-icon = ExtResource("1_x0e56")
+icon = ExtResource("2_mgnio")
 icon_alignment = 1
 expand_icon = true
 
@@ -21,7 +21,7 @@ offset_left = 74.0
 offset_top = 587.0
 offset_right = 133.0
 offset_bottom = 646.0
-icon = ExtResource("2_yu2aw")
+icon = ExtResource("3_lg213")
 icon_alignment = 1
 expand_icon = true
 
@@ -30,7 +30,7 @@ offset_left = 146.0
 offset_top = 588.0
 offset_right = 205.0
 offset_bottom = 647.0
-icon = ExtResource("3_renbb")
+icon = ExtResource("4_t12d6")
 icon_alignment = 1
 expand_icon = true
 

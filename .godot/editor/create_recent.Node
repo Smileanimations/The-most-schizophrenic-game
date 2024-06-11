@@ -1,4 +1,8 @@
 Timer
+RigidBody2D
+CollisionShape2D
+Sprite2D
+Area2D
 Button
 Label
 AudioStreamPlayer
@@ -7,6 +11,4 @@ ProgressBar
 TextureProgressBar
 Node
 Container
-CollisionShape2D
 AnimationPlayer
-Area2D
