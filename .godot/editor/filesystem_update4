@@ -1,10 +1,8 @@
-res://Player/player.gd
-res://Player/player.tscn
 res://main.tscn
 res://Attacks/bubble_attack.tscn
+res://Player/player.tscn
 res://UI/Agitated.tscn
 res://UI/Audiostreamer.tscn
 res://UI/AttackUI.tscn
+res://Player/player.gd
 res://Attacks/bubble_attack.gd
-res://UI/AttackUI.gd
-res://UI/Agitated.gd

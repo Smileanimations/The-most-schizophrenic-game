@@ -4,13 +4,12 @@ extends Area2D
 @export var Health = 20
 @onready var Healthbar = $Healthbar
 @onready var Bscene = preload("res://Attacks/bubble_attack.tscn")
-var screen_size
+#Sets the screensize to a set size so it cant change when entering full screen
+@onready var screen_size = get_viewport_rect().size
 var cooldown = false
 var velocity = Vector2.ZERO
 
 func _ready():
-	#Sets the screensize to a set size so it cant change when entering full screen
-	screen_size = get_viewport_rect().size
 	Healthbar.max_value = Health
 	Healthbar.value = Health
 
@@ -19,12 +18,16 @@ func _process(delta):
 	velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
+		print ("Velocity = %s" % velocity)
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1
+		print ("Velocity = %s" % velocity)
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1
+		print ("Velocity = %s" % velocity)
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
+		print ("Velocity = %s" % velocity)
 	
 	#Sets the speed of Mizustune
 	if velocity.length() > 0:
@@ -50,8 +53,8 @@ func _process(delta):
 #Causes bubbles to shoot from mizustune 
 func bubbleblight():
 	if !cooldown:
-		#Causes for only 3 bubbles to shoot out
-		for n in 3:
+		#Causes for only 2 bubbles to shoot out
+		for n in 2:
 			#Instances the scene that handles all the bubble code
 			var Bubblechild = Bscene.instantiate()
 			add_child(Bubblechild)

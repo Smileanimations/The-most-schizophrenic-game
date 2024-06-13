@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Attacks/bubble_attack.gd" id="1_ts0lh"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_olioh"]
+friction = 1000.0
 rough = true
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xm4wk"]
